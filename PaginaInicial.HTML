@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PAGINA INICIAL</title>
+        <meta name="www.rivamoreira.com.br" content="INICIO DO PROJETO">
+        <link rel="stylesheet" href="main.css">
+</head>
+    <!-- ESTE É O CABEÇALHO DO SITE-->
+    
+<style>
+		/* Estilo para o cabeçalho */
+		.cabecalho {
+			background-color: #87CEEB; /* Cor de fundo laranja */
+            
+			padding: 2px;
+			text-align: center;
+		}
+		
+		/* Estilo para as fotos */
+		.foto {
+			width: 110px; /* Largura da foto */
+			height: 100px; /* Altura da foto */
+			margin: 5px; /* Margem entre as fotos */
+			border: 2px solid #ccc; /* Borda cinza */
+			border-radius: 2px; /* Cantos arredondados */
+			box-shadow: 0 0 2px rgba(0,0,0,0.2); /* Sombra */
+			display: inline-block; /* Exibir as fotos lado a lado */
+		}
+</style>
+
+
+<header class="cabecalho">
+         <img src="Riva.jpg" class="foto">
+        <img src="cloud.jpg" class="foto">
+        <img src="computador.jpg" class="foto">
+		<img src="Foto_1.jpg" class="foto">
+		<img src="light-aircraft.jpg" class="foto">
+        <img src="Energia.jpg" class="foto">
+
+</header>
+    <style>
+  #relogio { text-align: right; }
+</style>
+
+    
+ <p id="relogio"></p>
+<script>
+    
+  function atualizarRelogio() {
+    var agora = new Date();
+    var horas = agora.getHours();
+    var minutos = agora.getMinutes();
+    var segundos = agora.getSeconds();
+    document.getElementById("relogio").innerHTML = (horas < 10 ? "0" : "") + horas + ":" + (minutos < 10 ? "0" : "") + minutos + ":" + (segundos < 10 ? "0" : "") + segundos;
+  }
+  setInterval(atualizarRelogio, 1000);
+</script>
+      
+<h2 id="dia-semana"></h2>
+<script>
+const diasSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+const dataAtual = new Date();
+const diaSemanaAtual = diasSemana[dataAtual.getDay()];
+document.getElementById("dia-semana").innerHTML = diaSemanaAtual;
+</script>
+          
+        <h1>QUEM SOMOS!</h1>
+   
+    
+<p>Bem-vindo ao  <a href="https://www.rivamoreira.com.br">www.rivamoreira.com.br</a>.
+   Um site  moderno e aberto para estudos e desenvolvimento de WEB DESIGN.  </p>
+<p> Um ambiente de soluções de desenvolvimento WEB  que combina ferramentas e aplicações  para que você obtenha um completo apoio técnico na hora que desejar construir seu site nos melhores padrões de localização e busca na WEB....</p>
+
+    
+    <body>
+        <style>
+  body {
+     background-color: #DCDCDC
+  }
+</style>
+    <!--  Somos desenvolvedores de Soluções WEB        -->
+        
+        <h3>Somos desenvolvedores de Soluções WEB </h3>
+       
+        <p>  Fazemos sua empresa estar conectada no mundo da IoT - Internet!!   </p>
+        
+  <!--  LET US KNOW WHAT YOU THINK      -->
+        
+  <h3> LET US KNOW WHAT YOU THINK</h3>
+        <p> Deixe-nos saber o que você pensa, compartilhe suas ideias ou contribua diretamente para o projeto.
+        <p> Email:  riva.moreira@educacao.mg.gov.br / riva.moreira@cogna.com.br   -     WhatsApp - +55 31-991182663</p> 
+            
+  
+ 
+ <h2> Links  ùteis </h2>
+         <!--  o Ul cria listas em HTML -->
+        <ul>   
+            <li><a href="https://www.utfpr.edu.br/campus/pontagrossa">Universidade Técnica Federal do Paraná - Campus Ponta Grossa</a>
+            <li><a href="https://www.uol.com.br">www.uol.com.br</a>
+            <li><a href="https://www.gov.br/pt-br">www.gov.br/pt-br</a> 
+            <li><a href="https://www.nasa.gov"/>www.nasa.gov </a> 
+        </ul>
+        
+    </body>
+</html>
